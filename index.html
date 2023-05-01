@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://htmldemo.net/pisces/pisces/assets/css/vendor.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tailwine.css">
+        <title>Document</title>
+        <style>
+        #sliderimg2{
+    z-index: -1;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.relative i{
+    /*position: absolute;*/
+    /*top: 98%;*/
+    /*left: 50%;*/
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /*background-color: #555;*/
+    /*color: white;*/
+    /*font-size: 16px;*/
+    padding: 12px 24px;
+    /*border: none;*/
+    /*cursor: pointer;*/
+    /*border-radius: 25px;*/
+    /*text-align: center;*/
+}
+
+
+.photobanner {
+    animation: bannermove 50s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+    from {
+        left: 10px;
+    }
+    to {
+        left: -1900px;
+    }
+}
+
+    </style>
+    </head>
+    <body class="overflow-x-hidden">
+        <div class="menu-area">
+            <header>
+                <!--<div class="menu-area">-->
+                <div class="container max-w-7xl mx-auto px-4 pl-5 pr-5 ">
+
+                    <div clas="row-align-items-center">
+
+                        <nav class="relative px-2 py-4 mt-5 mb-5">
+
+                            <div class="container mx-auto flex justify-between
+                                items-center">
+                                <img class="image" src="logo.png"
+                                    alt="Tailwindcss Navigation" width="150"
+                                    height="50">
+
+                                <ul class="hidden lg:flex space-x-6">
+                                    <li><b><a href="#"
+                                                class="hover:text-[#fe8366]">Home</a></b></li>
+                                    <li><b><a href="#"
+                                                class="hover:text-[#fe8366]">About
+                                                Us</a></b></li>
+                                    <li class="flex relative group">
+                                        <b><a href="#" class="mr-1
+                                                hover:text-[#fe8366]">Courses</a></b>
+                                        <!--                                <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>-->
+                                        <!-- Submenu starts -->
+                                        <ul class="absolute bg-white p-3 w-52
+                                            top-6 transform scale-0
+                                            group-hover:scale-100 transition
+                                            duration-150 ease-in-out origin-top
+                                            shadow-lg border-t-4
+                                            border-[#fe8366]"
+                                            style="z-index: 4">
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Courses</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Courses
+                                                    Details</a></li>
+                                        </ul>
+                                        <!-- Submenu ends -->
+                                    </li>
+                                    <!--                        add other -->
+                                    <li class="flex relative group">
+                                        <b><a href="#" class="mr-1
+                                                hover:text-red-400">Events</a></b>
+                                        <!--                                <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>-->
+                                        <!-- Submenu starts -->
+                                        <ul class="absolute bg-white p-3 w-52
+                                            top-6 transform scale-0
+                                            group-hover:scale-100 transition
+                                            duration-150 ease-in-out origin-top
+                                            shadow-lg border-t-4
+                                            border-[#fe8366]"
+                                            style="z-index: 4">
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Events</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Events
+                                                    Details</a></li>
+                                        </ul>
+                                        <!-- Submenu ends -->
+                                    </li>
+
+
+                                    <li class="flex relative group">
+                                        <b><a href="#" class="mr-1
+                                                hover:text-red-400">Pages</a></b>
+                                        <!--                                <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>-->
+                                        <!-- Submenu starts -->
+                                        <ul class="absolute bg-white p-3 w-52
+                                            top-6 transform scale-0
+                                            group-hover:scale-100 transition
+                                            duration-150 ease-in-out origin-top
+                                            shadow-lg border-t-4
+                                            border-[#fe8366]"
+                                            style="z-index: 4">
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Gallery</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Gallery
+                                                    Details</a></li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Pricing</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Team</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Faq</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Shop</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">Shop
+                                                    Details</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!--                            news -->
+
+                                    <li class="flex relative group">
+                                        <b><a href="#" class="mr-1
+                                                hover:text-red-400">News</a></b>
+                                        <!--                                <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>-->
+                                        <!-- Submenu starts -->
+                                        <ul class="absolute bg-white p-3 w-52
+                                            top-6 transform scale-0
+                                            group-hover:scale-100 transition
+                                            duration-150 ease-in-out origin-top
+                                            shadow-lg border-t-4
+                                            border-[#fe8366]"
+                                            style="z-index: 4">
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">News</a>
+                                            </li>
+                                            <li class="text-sm
+                                                hover:bg-slate-100 leading-8"><a
+                                                    href="#"
+                                                    class="hover:text-[#fe8366]">News
+                                                    Details
+                                                </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <!--                            new end -->
+                                    <!--                            <li><b><a href="#" class="hover:text-[#fe8366]">News</a></b></li>-->
+                                    <li><b><a href="#"
+                                                class="hover:text-[#fe8366]">Contact</a></b></li>
+                                </ul>
+
+
+                                <a href="#" class="bg-red-400 px-4 py-3
+                                    rounded-full text-white hidden lg:flex">
+                                    <img src="menu.png">
+                                </a>
+
+                                <!-- Mobile menu icon -->
+                                <button id="mobile-icon" class="lg:hidden">
+                                    <i onclick="changeIcon(this)"
+                                        class="text-white border-3 bg-[#fe8366]
+                                        px-4 py-3 rounded-full">☰</i>
+                                </button>
+
+                            </div>
+
+                            <!--                    <div class="nav-demo">-->
+                            <!--                        <div class="md:hidden flex justify-center mt-3 w-full">-->
+                            <!--                            <div id="mobile-menu" class="mobile-menu absolute top-23 w-full">-->
+                            <!--                                &lt;!&ndash; add hidden here later &ndash;&gt;-->
+                            <!--                                <ul class="bg-gray-100 shadow-lg leading-9 font-bold">-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a-->
+                            <!--                                            href="https://google.com" class="block pl-7">Home</a></li>-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"><a-->
+                            <!--                                            href="#"-->
+                            <!--                                            class="block pl-7">About-->
+                            <!--                                        Us</a></li>-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white">-->
+                            <!--                                        <a href="#" class="block pl-11">Courses <i-->
+                            <!--                                                class="fa-solid fa-chevron-down fa-2xs pt-4"></i></a>-->
+                            <!--                                        &lt;!&ndash; Submenu starts &ndash;&gt;-->
+                            <!--                                        <ul class="bg-white text-gray-800 w-full" style="z-index: 4">-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Courses</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Courses Details</a></li>-->
+                            <!--                                        </ul>-->
+                            <!--                                        &lt;!&ndash; Submenu ends &ndash;&gt;-->
+                            <!--                                    </li>-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white">-->
+                            <!--                                        <a href="#" class="block pl-11">Events <i-->
+                            <!--                                                class="fa-solid fa-chevron-down fa-2xs pt-4"></i></a>-->
+                            <!--                                        &lt;!&ndash; Submenu starts &ndash;&gt;-->
+                            <!--                                        <ul class="bg-white text-gray-800 w-full" style="z-index: 4">-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Events</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Events Details</a></li>-->
+                            <!--                                        </ul>-->
+                            <!--                                        &lt;!&ndash; Submenu ends &ndash;&gt;-->
+                            <!--                                    </li>-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white"-->
+                            <!--                                        style="z-index: 10">-->
+                            <!--                                        <a href="#" class="block pl-11">Pages <i-->
+                            <!--                                                class="fa-solid fa-chevron-down fa-2xs pt-4"></i></a>-->
+                            <!--                                        &lt;!&ndash; Submenu starts &ndash;&gt;-->
+                            <!--                                        <ul class="bg-white text-gray-800 w-full" style="z-index: 4">-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Gallery</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Gallery Details</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Pricing</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Team</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Faq</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Shop</a></li>-->
+                            <!--                                            <li class="text-sm leading-8 font-normal hover:bg-slate-200"><a-->
+                            <!--                                                    class="block pl-16" href="#">Shop Details</a></li>-->
+                            <!--                                        </ul>-->
+                            <!--                                        &lt;!&ndash; Submenu ends &ndash;&gt;-->
+                            <!--                                    </li>-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"-->
+                            <!--                                        style="z-index: 4"><a-->
+                            <!--                                            href="#"-->
+                            <!--                                            class="block pl-7">About</a>-->
+                            <!--                                    </li>-->
+                            <!--                                    <li class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"-->
+                            <!--                                        style="z-index: 4"><a-->
+                            <!--                                            href="#"-->
+                            <!--                                            class="block pl-7">Contact</a>-->
+                            <!--                                    </li>-->
+                            <!--                                </ul>-->
+                            <!--                            </div>-->
+                            <!--                        </div>-->
+                            <!--                    </div>-->
+                            <!--                </nav>-->
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!--second part add -->
+            <div class="bg-[url('slider_img_bg2.png')] bg-no-repeat bg-center
+                w-full bg-slate-50">
+                <div class="container mx-auto pl-5 pr-5 ">
+                    <div class="grid-rows-1 md:ml-20 ml-30 md:mr-20 mr-30">
+                        <div class="columns-1 lg:columns-2">
+                            <div class="mt-8 lg:mt-20 slider-content
+                                s-slider-content justify-center ml-5 relative">
+                                <h2 id="heading" class="sm:text-7xl text-3xl
+                                    text-[#010f2e] wow fadeInUp animated"
+                                    data-delay=".5s"
+                                    data-animation="fadeInUp animated"><b>Start
+                                        Learning With Us Now!</b></h2>
+                                <p class=" pt-5 text-slate-500 text-xl wow
+                                    fadeInUp animated" data-delay=".7s"
+                                    data-animation="fadeInUp animated">Cras
+                                    faucibus ornare ipsum, non luctus leo
+                                    imperdiet sit
+                                    amet.
+                                    Praesent
+                                    <br>egestas orci eu risus iaculis luctus.
+                                    Phasellus maximus orci metus.</p>
+                                <div class="subricbe w-auto rounded-md bg-white
+                                    z-50 p-relative p-4 mt-8 sm:w-max wow
+                                    fadeInUp animated"
+                                    date-delay=".5s" data-animation="fadeInUp
+                                    animated" style="z-index: 4 ;">
+                                    <form action="news-mail.php"
+                                        class="contact-form block sm:flex"
+                                        style=" justify-content:
+                                        space-between;">
+                                        <label class="mt-3 mb-3 ml-3
+                                            border-grey-600 uppercase w-46
+                                            mr-3">
+                                            <!--                                    <i class="fa fa-envelope mr-3 bg-[#fe8366]"> </i>-->
+                                            Email Address
+
+                                        </label>
+                                        <input type="text" placeholder="Your
+                                            Email Address..."
+                                            class="mt-1 px-3 py-2 bg-white
+                                            placeholder-slate-400
+                                            focus:outline-none block rounded-md
+                                            sm:text-sm focus:ring-1 ml-3 mr-3
+                                            w-96 sm:w-auto lg:w-96 md:w-auto">
+                                        <button class="bg-[#fe8366] duration-300
+                                            sm:w-48 w-full rounded-lg pl-4 pr-4
+                                            pt-4 pb-4"
+                                            id="button1">
+                                            Subscribe Now
+                                        </button>
+
+                                    </form>
+                                </div>
+
+
+                                <!--                        <div class="grid grid-cols-3 gap-4">-->
+                                <!--                            <div class="subricbe rounded-md bg-white">-->
+                                <!--                                <form action="news-mail.php" class="">-->
+                                <!--                                    <label class="">-->
+                                <!--                                        <i class="fa fa-envelope"></i>-->
+                                <!--                                        Email Address-->
+                                <!--                                    </label>-->
+                                <!--                                    <input type="text" pleceholder="Your Email Address...">-->
+                                <!--                                    <button class="bg[#fe8366]">Subscribe Now</button>-->
+                                <!--                                </form>-->
+                                <!--                            </div>-->
+                                <!--                        </div>-->
+
+                            </div>
+                            <div class=" ml-4 mt-15 wow fadeInRight animated">
+                                <div class="relative">
+                                    <img src="slider_img05.png"
+                                        class="sm:max-w-min">
+                                    <div class="z-30 absolute top-0 bg-red-50
+                                        w-full h-full top-1/4 left-1/3
+                                        rounded-lg"
+                                        id="sliderimg2"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--    slider area end -->
+            <!--    about area start-->
+            <section class=" bg-[url('about-bg-aliments.png')] bg-no-repeat
+                bg-center w-full mt-10 mb-20">
+                <div class="container max-w-7xl mx-auto pl-5 pr-5">
+                    <div class="row mx-10 md:mx-36 lg:mx-10 ">
+                        <div class="columns-1 lg:columns-2">
+                            <div class="s-about-img p-relative wow fadeInLeft
+                                animated" data-animation="fadeInLeft"
+                                data-delay=".4s" style="visibility: visible;
+                                animation-name: fadeInLeft;">
+                                <img src="about_img.png" alt="img"
+                                    class="relative">
+                                <div class="about-text second-about left-1/2
+                                    top-2/4 absolute inset-y-0 right-10 w-52
+                                    h-52 text-center bg-[#fff] shadow-lg
+                                    shadow-white-500/50 p-8 rounded-full hidden
+                                    sm:flex">
+                                    <div class="all-text text-[#010f2e] relative
+                                        block text-1xl w-full rounded-full
+                                        border-dashed border-2 border-[#fe8366]
+                                        pt-6 ">
+                                        <h3 class="text-red-400 text-3xl"><b>50</b></h3>
+                                        <span>years of <br> experience</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-content s-about-content wow
+                                fadeInRight animated"
+                                data-animation="fadeInRight"
+                                data-delay=".4s"
+                                style="visibility: visible; animation-name:
+                                fadeInRight;padding-top: 30px;">
+                                <div class="about-title second-atitle pb-25">
+                                    <h5 class="text-[#fe8366] text-2xl mb-3"><b>About</b></h5>
+                                    <h2 class=" text-5xl mb-3 text-[#010f2e]"><b>Welcome
+                                            To Online Class Education</b></h2>
+                                </div>
+                                <p class="text-[#777777] mt-10">Curabitur
+                                    tristique, sem id sagittis varius, lacus
+                                    ligula mollis
+                                    dui,
+                                    ac condimentum felis metus ut nulla. Aenean
+                                    ut ultricies turpis, sed sollicitudin eros.
+                                    Aliquam quis dui ut diam lobortis dignissim
+                                    ut aliquet ex.</p>
+                                <div class="about-content3 mt-5">
+                                    <ul class="list-disc text-[#010f2e]">
+                                        <li class="text-[#010f2e] font-bold">Nulla
+                                            pellentesque posuere metus, sed
+                                            hendrerit
+                                            purus venenatis in. Sed at
+                                            vestibulum magna.
+                                        </li>
+                                        <li class="text-[#010f2e] font-bold
+                                            mt-5">Etiam quis lacinia ipsum.
+                                            Aliquam blandit,
+                                            mauris nec molestie interdum, quam
+                                            massa
+                                            finibus turpis, ut eleifend tellus
+                                            massa eget nunc.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <button class="transition ease-in-out
+                                        delay-150 bg-[#fe8366] hover:bg-black
+                                        text-white uppercase rounded-lg pt-4
+                                        pb-4 pl-7 pr-7 mt-5">
+                                        <b>read more</b>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--    bg-[url('image/about-bg-aliments.png')] bg-no-repeat bg-center w-full mt-10 mb-20-->
+            <!--    about area end-->
+
+            <!--    video area start-->
+            <section class="bg-[url('vedio-bg.png')] bg-no-repeat w-full h-700
+                ">
+                <div class="container max-w-7xl md:mx-auto pl-5 pr-5">
+                    <div class="row pt-20 pl-5 pr-5">
+                        <div class="col-lg-12 ">
+                            <div class="section-title center-align text-center">
+                                <h5 class="text-[#fe8366] text-2xl"><b>Watch Us</b></h5>
+                                <h2 class=" text-3xl text-black sm:text-5xl pt-5
+                                    "><b>
+                                        Start Growing With Community
+                                    </b>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row pt-9">
+                            <div class="col-lg-12 col-md-12">
+
+                                <div class="relative wow fadeInRight animated "
+                                    data-animation="fadeInDown"
+                                    data-delay=".2s" id="">
+                                    <img src="vedio-img.png"
+                                        class="sm:h-full md:h-[500px] h-[500px]
+                                        object-none object-center bg-no-repeat
+                                        w-full ">
+
+                                    <div class="absolute inset-1/2">
+                                        <span class=" animate-ping inline-flex
+                                            h-14 w-14 rounded-full bg-[#fe8366]
+                                            sm:h-20 sm:w-20 "></span>
+                                        <a
+                                            href="https://www.youtube.com/watch?v=gyGsPlt06bo"
+                                            class=" bg-[#fe8366] px-4 py-3
+                                            rounded-full text-white md:flex w-14
+                                            h-14 sm:h-20 sm:w-20 absolute
+                                            inset-1/2 shadow-red-400"
+                                            id="">
+                                            <img src="play.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--    video area end-->
+            <!--    bg-[url('image/vedio-bg.png')] bg-no-repeat w-full h-700-->
+            <!--start services area-->
+
+            <section
+                class="services-area pb-90 mt-[5%] fix
+                bg-[url('about-bg-aliments.png')] bg-no-repeat w-full h-full
+                bg-center ">
+                <div class="container max-w-7xl md:mx-auto px-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:mx-10">
+                        <div class="">
+                            <h5 class="text-[#fe8366] text-xl"><b>Services</b></h5>
+                            <h2 class="text-[#010f2e] text-4xl sm:text-5xl
+                                font-bold pt-5">What We Provide To You</h2><br>
+                            <p class="text-[#777777]">Pellentesque fringilla,
+                                massa sit amet feugiat mollis, leo turpis
+                                elementum justo, vel consequat ex urna ut massa
+                                maecenas justo sapien.</p>
+
+                            <div class="slider-btn mt-10">
+                                <button class="transition ease-in-out delay-150
+                                    bg-[#fe8366] hover:bg-black text-white
+                                    uppercase rounded-lg pt-4 pb-4 pl-7 pr-7
+                                    mt-3">
+                                    View All Services
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="row">
+                                <div class="grid grid-cols-1 grid-rows-6 gap-4
+                                    md:grid-cols-2 grid-row-3 gap-4
+                                    sm:grid-cols-1 grid-row-6 gap-4
+                                    lg:grid-cols-3 grid-rows-2 gap-4">
+
+                                    <div class="p-4 bg-gray-50 rounded-lg
+                                        fadeInDown animated" data-delay=".5s"
+                                        style="visibility: visible;
+                                        animation-name: fadeInDown;">
+                                        <div class=" border-2 inline-block p-4
+                                            w-14 h-14 text-center rounded-full
+                                            border-[#fe8366]">
+                                            <img src="pv-icon1.png" alt="icon01"
+                                                class="max-w-full">
+                                        </div>
+                                        <div class="">
+                                            <h5 class="text-[#010f2e]
+                                                hover:text-[#fe8366] font-bold
+                                                text-2xl pt-3">
+                                                Skilled Lecturers</h5>
+                                            <p class="text-[#777777] pt-5 ">Cras
+                                                ornare sagittis tortor a
+                                                facilisis
+                                                nteger augue quam, placerat.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- new containe -->
+                                    <div class="">
+                                        <div class="p-4 bg-gray-50 rounded-lg
+                                            fadeInDown animated"
+                                            data-delay=".5s"
+                                            style="visibility: visible;
+                                            animation-name: fadeInDown;">
+                                            <div class="border-2 inline-block
+                                                p-4 w-14 h-14 text-center
+                                                rounded-full border-[#fe8366] ">
+                                                <img src="pv-icon2.png"
+                                                    alt="icon02"
+                                                    class="max-w-full">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-[#010f2e]
+                                                    hover:text-[#fe8366]
+                                                    font-bold text-2xl pt-3">
+                                                    Hot Stone Message</h5>
+                                                <p class="text-[#777777] pt-5 ">Cras
+                                                    ornare sagittis tortor a
+                                                    facilisis
+                                                    nteger augue quam, placerat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--                                    new  containe -->
+                                    <div class="">
+                                        <div class="p-4 bg-gray-50 rounded-lg
+                                            fadeInDown animated"
+                                            data-delay=".5s"
+                                            style="visibility: visible;
+                                            animation-name: fadeInDown;">
+                                            <div class=" border-2 inline-block
+                                                p-4 w-14 h-14 text-center
+                                                rounded-full border-[#fe8366] ">
+                                                <img src="pv-icon3.png"
+                                                    alt="icon02"
+                                                    class="max-w-full">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-[#010f2e]
+                                                    hover:text-[#fe8366]
+                                                    font-bold text-2xl pt-3">
+                                                    Book Library</h5>
+                                                <p class="text-[#777777] pt-5 ">Cras
+                                                    ornare sagittis tortor a
+                                                    facilisis
+                                                    nteger augue quam, placerat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--                                    new containe -->
+                                    <div class="">
+                                        <div class="p-4 bg-gray-50 rounded-lg
+                                            fadeInDown animated"
+                                            data-delay=".5s"
+                                            style="visibility: visible;
+                                            animation-name: fadeInDown;">
+                                            <div class=" border-2 inline-block
+                                                p-4 w-14 h-14 text-center
+                                                rounded-full border-[#fe8366] ">
+                                                <img src="pv-icon4.png"
+                                                    alt="icon02"
+                                                    class="max-w-full">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-[#010f2e]
+                                                    hover:text-[#fe8366]
+                                                    font-bold text-2xl pt-3">
+                                                    Online Classes</h5>
+                                                <p class="text-[#777777] pt-5 ">Cras
+                                                    ornare sagittis tortor a
+                                                    facilisis
+                                                    nteger augue quam, placerat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--                                    new containe-->
+                                    <div class="">
+                                        <div class="p-4 bg-gray-50 rounded-lg
+                                            fadeInDown animated"
+                                            data-delay=".5s"
+                                            style="visibility: visible;
+                                            animation-name: fadeInDown;">
+                                            <div class=" border-2 inline-block
+                                                p-4 w-14 h-14 text-center
+                                                rounded-full border-[#fe8366] ">
+                                                <img src="pv-icon5.png"
+                                                    alt="icon02"
+                                                    class="max-w-full">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-[#010f2e]
+                                                    hover:text-[#fe8366]
+                                                    font-bold text-2xl pt-3">
+                                                    Home Projects</h5>
+                                                <p class="text-[#777777] pt-5 ">Cras
+                                                    ornare sagittis tortor a
+                                                    facilisis
+                                                    nteger augue quam, placerat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--                                    add new containe -->
+                                    <div class="">
+                                        <div class="p-4 bg-gray-50 rounded-lg
+                                            fadeInDown animated"
+                                            data-delay=".5s"
+                                            style="visibility: visible;
+                                            animation-name: fadeInDown;">
+                                            <div class=" border-2 inline-block
+                                                p-4 w-14 h-14 text-center
+                                                rounded-full border-[#fe8366] ">
+                                                <img src="pv-icon6.png"
+                                                    alt="icon02"
+                                                    class="max-w-full">
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text-[#010f2e]
+                                                    hover:text-[#fe8366]
+                                                    font-bold text-2xl pt-3">
+                                                    24x7 Support</h5>
+                                                <p class="text-[#777777] pt-5 ">Cras
+                                                    ornare sagittis tortor a
+                                                    facilisis
+                                                    nteger augue quam, placerat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--                                    end new containe -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--        end services area -->
+
+            <!--   start featured -course area -->
+
+            <section class=" mt-10">
+                <div class="">
+                    <div class="col-lg-12 ">
+                        <div class="center-align text-center pt-10">
+                            <h5 class="text-[#fe8366] text-2xl"><b>Best Courses</b></h5>
+                            <h2 class=" text-2xl text-[#010f2e] sm:text-5xl pt-5
+                                "><b>
+                                    Featured Courses
+                                </b>
+                            </h2>
+                        </div>
+                    </div>
+
+
+                    <div class="">
+
+                        <div class="wrapper w-full overflow-hidden">
+                            <div class="photobanner mt-10 relative h-96
+                                mb-[30px] flex w-full">
+                                <img class="m-2" src="courses-img1.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img2.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img3.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img4.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img5.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img1.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img2.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img3.png "
+                                    alt=""/>
+                                <img class="m-2" src="courses-img4.png "
+                                    alt=""/>
+                            </div>
+                        </div>
+
+                        <!--                <div class="imageslider">-->
+                        <!--                    <div class="relative">-->
+                        <!--                        <img src="image/courses-img1.png" alt="icon01" class="rounded-[24px] ">-->
+                        <!--                        <div class="absolute text-white bottom-[10px] ml-5">-->
+                        <!--                            <h5><b>3 years</b></h5>-->
+                        <!--                            <h3><b>Civil Engeering</b></h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+                        <!--                &lt;!&ndash; new containe &ndash;&gt;-->
+                        <!--                <div class="imageslider">-->
+                        <!--                    <div class="relative rounded-lg">-->
+                        <!--                        <img src="image/courses-img2.png" alt="icon02" class=" rounded-[24px]">-->
+                        <!--                        <div class="absolute text-white bottom-[10px] ml-5">-->
+                        <!--                            <h5><b>3 Years</b></h5>-->
+                        <!--                            <h3><b>Civil Engeering</b></h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+
+                        <!--                <div class="imageslider">-->
+                        <!--                    <div class="relative rounded-lg">-->
+                        <!--                        <img src="image/courses-img3.png" alt="icon02" class=" rounded-[24px]">-->
+                        <!--                        <div class="absolute text-white bottom-[10px] ml-5">-->
+                        <!--                            <h5><b>3 Years</b></h5>-->
+                        <!--                            <h3><b>Civil Engeering</b></h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+                        <!--                <div class="imageslider">-->
+                        <!--                    <div class="relative rounded-lg">-->
+                        <!--                        <img src="image/courses-img4.png" alt="icon02" class=" rounded-[24px]">-->
+                        <!--                        <div class="absolute text-white bottom-[10px] ml-5">-->
+                        <!--                            <h5><b>3 Years</b></h5>-->
+                        <!--                            <h3><b>Civil Engeering</b></h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+                        <!--                <div class="imageslider">-->
+                        <!--                    <div class="relative rounded-lg">-->
+                        <!--                        <img src="image/courses-img5.png" alt="icon02" class=" rounded-[24px]">-->
+                        <!--                        <div class="absolute text-white bottom-[10px] ml-5">-->
+                        <!--                            <h5><b>3 Years</b></h5>-->
+                        <!--                            <h3><b>Civil Engeering</b></h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+                        <!--                <div class="imageslider">-->
+                        <!--                    <div class="relative rounded-lg">-->
+                        <!--                        <img src="image/courses-img1.png" alt="icon02" class=" rounded-[24px]">-->
+                        <!--                        <div class="absolute text-white bottom-[10px] ml-5">-->
+                        <!--                            <h5><b>3 Years</b></h5>-->
+                        <!--                            <h3><b>Civil Engeering</b></h3>-->
+                        <!--                        </div>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <!--    end featured- course area -->
+            <!--    events area start-->
+
+            <div class="section pb-90 mt-[5%] fix
+                bg-[url('event-bg-aliments.png')] bg-no-repeat w-full h-full
+                bg-center">
+                <div class="container max-w-7xl md:mx-auto px-10">
+
+                    <div class="col-lg-12 ">
+                        <div class="center-align text-center pt-10">
+                            <h5 class="text-[#fe8366] text-2xl"><b>Our Events</b></h5>
+                            <h2 class=" text-4xl text-[#010f2e] lg:text-5xl pt-5
+                                "><b>
+                                    Upcoming Events
+                                </b>
+                            </h2>
+                        </div>
+                    </div>
+
+
+                    <div class="lg:grid grid-cols-2 row-3 gap-4 grid-cols1
+                        row-12 gap-4 pt-10 ">
+
+                        <div class="sm:flex pt-5 flex-none" id="columnstest">
+                            <div class=" w-full flex-none sm:w-14 sm:h-14
+                                about-text second-about right-10 sm:w-44 sm:h-44
+                                text-center bg-[#fff] shadow-lg
+                                shadow-white-500/50 p-4 rounded-lg">
+                                <div class="all-text text-[#010f2e] relative
+                                    block text-1xl w-full rounded-lg
+                                    border-dashed border-2 border-[#fe8366] p-3
+                                    ">
+                                    <h3 class="text-[#fe8366] text-6xl"><b>18</b></h3>
+                                    <h5 class="pt-3"><b>March, 2021</b></h5>
+                                </div>
+                            </div>
+                            <div class="second grow-0 h-auto pl-5">
+                                <h5 class="hover:text-[#fe8366] text-[20px]
+                                    mt-3"><b>Cras faucibus ornare ipsum luctus.</b></h5>
+                                <ul class="pt-4 text-[#fe8366]">
+                                    <li style="display: inline">
+                                        <i class="fa fa-clock-o"></i>
+                                        9:00Am - 3:00Pm
+                                    </li>
+                                    <li style="display: inline;" class="ml-4">
+                                        <i clas="fa fa-map-marker"></i>
+                                        Mumbai, India
+                                    </li>
+                                </ul>
+                                <p class="pt-4 text-gray-400">Phasellus maximus
+                                    orci metus. Nullam enim ex, facilisis at
+                                    lacinia
+                                    sed, luctus vitae dolor. Nam at commodo
+                                    quam.</p>
+                            </div>
+                        </div>
+
+                        <!--                second  -->
+
+                        <div class="sm:flex pt-5 flex-none" id="columnstest">
+                            <div class=" w-full flex-none about-text
+                                second-about right-10 sm:w-44 sm:h-44
+                                text-center bg-[#fff] shadow-lg
+                                shadow-white-500/50 p-4 rounded-lg">
+                                <div class="all-text text-[#010f2e] relative
+                                    block text-1xl w-full rounded-lg
+                                    border-dashed border-2 border-[#fe8366] p-3
+                                    ">
+                                    <h3 class="text-[#fe8366] text-6xl"><b>03</b></h3>
+                                    <h5 class="pt-3"><b>Jun, 2021</b></h5>
+                                </div>
+                            </div>
+                            <div class="second grow h-auto pl-5">
+                                <h5 class="hover:text-[#fe8366] text-[20px]
+                                    mt-3"><b>Cras faucibus ornare ipsum luctus.</b></h5>
+                                <ul class="pt-4 text-[#fe8366]">
+                                    <li style="display: inline">
+                                        <i class="fa fa-clock-o"></i>
+                                        9:00Am - 3:00Pm
+                                    </li>
+                                    <li style="display: inline;" class="ml-4">
+                                        <i clas="fa fa-map-marker"></i>
+                                        Mumbai, India
+                                    </li>
+                                </ul>
+                                <p class="pt-4 text-gray-400">Phasellus maximus
+                                    orci metus. Nullam enim ex, facilisis at
+                                    lacinia
+                                    sed, luctus vitae dolor. Nam at commodo
+                                    quam.</p>
+                            </div>
+                        </div>
+
+                        <!--                thord-->
+
+                        <div class="sm:flex pt-5 flex-none" id="columnstest">
+                            <div class=" w-full flex-none about-text
+                                second-about right-10 sm:w-44 sm:h-44
+                                text-center bg-[#fff] shadow-lg
+                                shadow-white-500/50 p-4 rounded-lg ">
+                                <div class="all-text text-[#010f2e] relative
+                                    block text-1xl w-full rounded-lg
+                                    border-dashed border-2 border-[#fe8366] p-3
+                                    ">
+                                    <h3 class="text-[#fe8366] text-6xl"><b>07</b></h3>
+                                    <h5 class="pt-3"><b>March, 2021</b></h5>
+                                </div>
+                            </div>
+                            <div class="second grow h-auto pl-5">
+                                <h5 class="hover:text-[#fe8366] text-[20px]
+                                    mt-3"><b>Cras faucibus ornare ipsum luctus.</b></h5>
+                                <ul class="pt-4 text-[#fe8366]">
+                                    <li style="display: inline">
+                                        <i class="fa fa-clock-o"></i>
+                                        9:00Am - 3:00Pm
+                                    </li>
+                                    <li style="display: inline;" class="ml-4">
+                                        <i clas="fa fa-map-marker"></i>
+                                        Mumbai, India
+                                    </li>
+                                </ul>
+                                <p class="pt-4 text-gray-400">Phasellus maximus
+                                    orci metus. Nullam enim ex, facilisis at
+                                    lacinia
+                                    sed, luctus vitae dolor. Nam at commodo
+                                    quam.</p>
+                            </div>
+                        </div>
+
+                        <!--forth-->
+
+                        <div class="sm:flex pt-5 flex-none" id="columnstest">
+                            <div class=" w-full flex-none about-text
+                                second-about right-10 sm:w-44 sm:h-44
+                                text-center bg-[#fff] shadow-lg
+                                shadow-white-500/50 p-4 rounded-lg">
+                                <div class="all-text text-[#010f2e] relative
+                                    block text-1xl w-full rounded-lg
+                                    border-dashed border-2 border-[#fe8366] p-3
+                                    ">
+                                    <h3 class="text-[#fe8366] text-6xl"><b>17</b></h3>
+                                    <h5 class="pt-3"><b>Jan, 2021</b></h5>
+                                </div>
+                            </div>
+                            <div class="second grow h-auto pl-5">
+                                <h5 class="hover:text-[#fe8366] text-[20px]
+                                    mt-3"><b>Cras faucibus ornare ipsum luctus.</b></h5>
+                                <ul class="pt-4 text-[#fe8366]">
+                                    <li style="display: inline">
+                                        <i class="fa fa-clock-o"></i>
+                                        9:00Am - 3:00Pm
+                                    </li>
+                                    <li style="display: inline;" class="ml-4">
+                                        <i clas="fa fa-map-marker"></i>
+                                        Mumbai, India
+                                    </li>
+                                </ul>
+                                <p class="pt-4 text-gray-400">Phasellus maximus
+                                    orci metus. Nullam enim ex, facilisis at
+                                    lacinia
+                                    sed, luctus vitae dolor. Nam at commodo
+                                    quam.</p>
+                            </div>
+                        </div>
+
+
+                        <!--five-->
+                        <div class="sm:flex pt-5 flex-none" id="columnstest">
+                            <div class="w-full flex-none about-text second-about
+                                right-10 sm:w-44 sm:h-44 text-center bg-[#fff]
+                                shadow-lg shadow-white-500/50 p-4 rounded-lg ">
+                                <div class="all-text text-[#010f2e] relative
+                                    block text-1xl w-full rounded-lg
+                                    border-dashed border-2 border-[#fe8366] p-3
+                                    ">
+                                    <h3 class="text-[#fe8366] text-6xl"><b>03</b></h3>
+                                    <h5 class="pt-3"><b>Jan, 2021</b></h5>
+                                </div>
+                            </div>
+                            <div class="second grow h-auto pl-5">
+                                <h5 class="hover:text-[#fe8366] text-[20px]
+                                    mt-3"><b>Cras faucibus ornare ipsum luctus.</b></h5>
+                                <ul class="pt-4 text-[#fe8366]">
+                                    <li style="display: inline">
+                                        <i class="fa fa-clock-o"></i>
+                                        9:00Am - 3:00Pm
+                                    </li>
+                                    <li style="display: inline;" class="ml-4">
+                                        <i clas="fa fa-map-marker"></i>
+                                        Mumbai, India
+                                    </li>
+                                </ul>
+                                <p class="pt-4 text-gray-400">Phasellus maximus
+                                    orci metus. Nullam enim ex, facilisis at
+                                    lacinia
+                                    sed, luctus vitae dolor. Nam at commodo
+                                    quam.</p>
+                            </div>
+                        </div>
+
+
+                        <!--                six-->
+
+                        <div class="sm:flex pt-5 flex-none" id="columnstest">
+                            <div class="w-full flex-none about-text second-about
+                                right-10 sm:w-44 sm:h-44 text-center bg-[#fff]
+                                shadow-lg shadow-white-500/50 p-4 rounded-lg ">
+                                <div class="all-text text-[#010f2e] relative
+                                    block text-1xl w-full rounded-lg
+                                    border-dashed border-2 border-[#fe8366] p-3
+                                    ">
+                                    <h3 class="text-[#fe8366] text-6xl"><b>28</b></h3>
+                                    <h5 class="pt-3"><b>Apr, 2021</b></h5>
+                                </div>
+                            </div>
+                            <div class="second grow h-auto pl-5">
+                                <h5 class="hover:text-[#fe8366] text-[20px]
+                                    mt-3"><b>Cras faucibus ornare ipsum luctus.</b></h5>
+                                <ul class="pt-4 text-[#fe8366]">
+                                    <li style="display: inline">
+                                        <i class="fa fa-clock-o"></i>
+                                        9:00Am - 3:00Pm
+                                    </li>
+                                    <li style="display: inline;" class="ml-4">
+                                        <i clas="fa fa-map-marker"></i>
+                                        Mumbai, India
+                                    </li>
+                                </ul>
+                                <p class="pt-4 text-gray-400">Phasellus maximus
+                                    orci metus. Nullam enim ex, facilisis at
+                                    lacinia
+                                    sed, luctus vitae dolor. Nam at commodo
+                                    quam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center pt-10">
+                        <button class="transition ease-in-out delay-150
+                            bg-[#fe8366] hover:bg-black text-white uppercase
+                            rounded-lg pt-4 pb-4 pl-7 pr-7 mt-3 align-middle">
+                            View All Services
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--    events area end -->
+
+            <!--testimonial area -->
+
+
+            <div class="section pb-90 mt-[5%] fix
+                bg-[url('test-bg-aliments.png')] bg-no-repeat w-full h-full
+                bg-center bg-[#fff7f5] ">
+                <div class="container max-w-7xl md:mx-auto px-10">
+                    <div class="lg:columns-2 gap-4 columns-1 gap-4 ">
+                        <div class="mt-20">
+                            <h5 class="text-[#fe8366] text-2xl pt-5"><b>Testimonial</b></h5>
+                            <h3 class="text-4xl text-[#010f2e] font-bold pt-5">See
+                                What Our Client Say’s</h3>
+                            <p class="text-[#777777] pt-5">Curabitur tristique,
+                                sem id sagittis varius, lacus ligula mollis dui,
+                                ac condimentum felis metus
+                                ut nulla. Aenean ut ultricies turpis, sed
+                                sollicitudin eros. Aliquam quis dui ut diam
+                                lobortis
+                                dignissim ut aliquet ex.</p>
+                        </div>
+
+                        <!--                <div class="mt-20 flex justify-center">-->
+                        <!--                    <div class=" w-full flex-none about-text second-about right-10 sm:w-[70%] sm:h-full text-center bg-[#fff] shadow-lg shadow-white-500/50 p-4 rounded-lg  ">-->
+                        <!--                        <div class="">-->
+                        <!--                            <img src="image/testi_avatar.png" style="float: left" class="mt-5">-->
+                        <!--                            <h6 class="text-2xl mt-9 text-[#201e1a]" style="float:left;"><b>Eity Akhter</b></h6>-->
+                        <!--&lt;!&ndash;                            <span class="text-[#fe8366] mt-5">Student</span>&ndash;&gt;-->
+                        <!--                        </div>-->
+                        <!--                        <div class="mt-5" style="float: right;">-->
+                        <!--                            <img src="image/qt-icon.png">-->
+                        <!--                        </div>-->
+                        <!--                        <br>-->
+                        <!--                        <p class="mt-28 text-[#777777]" >Etiam quis lacinia ipsum. Aliquam blandit, mauris nec molestie interdum, quam-->
+                        <!--                            massa-->
+                        <!--                            finibus turpis, ut eleifend tellus massa eget nunc. Maecenas luctus diam id augue-->
+                        <!--                            fringilla ornare. Sed varius massa non sem rutrum malesuada.</p>-->
+                        <!--                    </div>-->
+                        <!--                </div>-->
+
+
+                        <div class="slider-container flex-none sm:flex
+                            items-center justify-center h-full w-full
+                            mt-[20px]">
+                            <div class="slider w-full h-full m-[20px] rounded-md
+                                overflow-hidden relative">
+                                <div class="slides flex sm:flex-none relative">
+                                    <div id="slides__1"
+                                        class="slide flex justify-center w-full
+                                        h-[400px] snap-center mr-[0px]
+                                        box-border origin-center items-center
+                                        shrink-0">
+                                        <div class=" w-full flex-none about-text
+                                            second-about right-10 text-center
+                                            bg-[#fff] shadow-lg
+                                            shadow-white-500/50 p-4 rounded-lg
+                                            ">
+                                            <div class="">
+                                                <img src="testi_avatar.png"
+                                                    style="float: left"
+                                                    class="mt-5 ">
+                                                <h6 class="text-2xl mt-9
+                                                    text-[#201e1a]"
+                                                    style="float:left;"><b>Eity
+                                                        Akhter</b>
+                                                </h6>
+
+
+                                            </div>
+                                            <div class="mt-5" style="float:
+                                                right;">
+                                                <img src="qt-icon.png">
+                                            </div>
+                                            <br>
+                                            <p class="mt-28 text-[#777777] ltr">Etiam
+                                                quis lacinia ipsum. Aliquam
+                                                blandit,
+                                                mauris
+                                                nec molestie interdum, quam
+                                                massa
+                                                finibus turpis, ut eleifend
+                                                tellus massa eget nunc. Maecenas
+                                                luctus diam id
+                                                augue
+                                                fringilla ornare. Sed varius
+                                                massa non sem rutrum malesuada.</p>
+                                        </div>
+
+                                    </div>
+                                    <div id="slides__2"
+                                        class="slide flex justify-center w-full
+                                        h-[400px] snap-center mr-[0px]
+                                        box-border origin-center items-center
+                                        shrink-0">
+
+                                        <div class=" w-full flex-none about-text
+                                            second-about right-10 text-center
+                                            bg-[#fff] shadow-lg
+                                            shadow-white-500/50 p-4 rounded-lg
+                                            ">
+                                            <div class="">
+                                                <img src="testi_avatar.png"
+                                                    style="float: left"
+                                                    class="mt-5">
+                                                <h6 class="text-2xl mt-9
+                                                    text-[#201e1a]"
+                                                    style="float:left;"><b>Eity
+                                                        Akhter</b>
+                                                </h6>
+                                            </div>
+                                            <div class="mt-5" style="float:
+                                                right;">
+                                                <img src="qt-icon.png">
+                                            </div>
+                                            <br>
+                                            <p class="mt-28 text-[#777777]">Etiam
+                                                quis lacinia ipsum. Aliquam
+                                                blandit, mauris
+                                                nec molestie interdum, quam
+                                                massa
+                                                finibus turpis, ut eleifend
+                                                tellus massa eget nunc. Maecenas
+                                                luctus diam id
+                                                augue
+                                                fringilla ornare. Sed varius
+                                                massa non sem rutrum malesuada.</p>
+                                        </div>
+
+                                    </div>
+                                    <div id="slides__3"
+                                        class="slide flex justify-center w-full
+                                        h-[400px] snap-center mr-[0px]
+                                        box-border origin-center items-center
+                                        shrink-0">
+
+                                        <div class=" w-full flex-none about-text
+                                            second-about right-10 text-center
+                                            bg-[#fff] shadow-lg
+                                            shadow-white-500/50 p-4 rounded-lg
+                                            ">
+                                            <div class="">
+                                                <img src="testi_avatar.png"
+                                                    style="float: left"
+                                                    class="mt-5">
+                                                <h6 class="text-2xl mt-9
+                                                    text-[#201e1a]"
+                                                    style="float:left;"><b>Eity
+                                                        Akhter</b>
+                                                </h6>
+                                                <!--                            <span class="text-[#fe8366] mt-5">Student</span>-->
+                                            </div>
+                                            <div class="mt-5" style="float:
+                                                right;">
+                                                <img src="qt-icon.png">
+                                            </div>
+                                            <br>
+                                            <p class="mt-28 text-[#777777]">Etiam
+                                                quis lacinia ipsum. Aliquam
+                                                blandit, mauris
+                                                nec molestie interdum, quam
+                                                massa
+                                                finibus turpis, ut eleifend
+                                                tellus massa eget nunc. Maecenas
+                                                luctus diam id
+                                                augue
+                                                fringilla ornare. Sed varius
+                                                massa non sem rutrum malesuada.</p>
+                                        </div>
+                                    </div>
+                                    <div id="slides__4"
+                                        class="slide flex justify-center w-full
+                                        h-[400px] snap-center mr-[0px]
+                                        box-border origin-center items-center
+                                        shrink-0">
+                                        <div class=" w-full flex-none about-text
+                                            second-about right-10 text-center
+                                            bg-[#fff] shadow-lg
+                                            shadow-white-500/50 p-4 rounded-lg
+                                            ">
+                                            <div class="">
+                                                <img src="testi_avatar.png"
+                                                    style="float: left"
+                                                    class="mt-5">
+                                                <h6 class="text-2xl mt-9
+                                                    text-[#201e1a]"
+                                                    style="float:left;"><b>Eity
+                                                        Akhter</b>
+                                                </h6>
+                                            </div>
+                                            <div class="mt-5" style="float:
+                                                right;">
+                                                <img src="qt-icon.png">
+                                            </div>
+                                            <br>
+                                            <p class="mt-28 text-[#777777]">Etiam
+                                                quis lacinia ipsum. Aliquam
+                                                blandit, mauris
+                                                nec molestie interdum, quam
+                                                massa
+                                                finibus turpis, ut eleifend
+                                                tellus massa eget nunc. Maecenas
+                                                luctus diam id
+                                                augue
+                                                fringilla ornare. Sed varius
+                                                massa non sem rutrum malesuada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__nav box-border absolute
+                                    bottom-[0%] w-full text-center ">
+                                    <a class="slider__navlink inline-block
+                                        h-[7px] w-[45px] rounded-3xl bg-black
+                                        m-[10px] hover:bg-[#fe8366]"
+                                        href="#slides__1"></a>
+                                    <a class="slider__navlink inline-block
+                                        h-[7px] w-[45px] rounded-3xl bg-black
+                                        m-[10px] hover:bg-[#fe8366] "
+                                        href="#slides__2"></a>
+                                    <a class="slider__navlink inline-block
+                                        h-[7px] w-[45px] rounded-3xl bg-black
+                                        m-[10px] hover:bg-[#fe8366]"
+                                        href="#slides__3"></a>
+                                    <a class="slider__navlink inline-block
+                                        h-[7px] w-[45px] rounded-3xl bg-black
+                                        m-[10px] hover:bg-[#fe8366]"
+                                        href="#slides__4"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--    end testimonial area -->
+            <div class="pb-90 mt-[5%] fix bg-[url('blog-bg-aliments.png')]
+                bg-no-repeat w-full h-full bg-center">
+                <div class="container max-w-7xl md:mx-auto px-10">
+                    <div class="">
+                        <h5 class="text-center text-[#fe8366] text-2xl "><b> Our
+                                Blog </b></h5>
+                        <h2 class="text-center text-[#010f2e] text-5xl mt-5"><b>Latest
+                                News Feed</b></h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3
+                        md:grid-cols-2 mt-10">
+
+                        <div class="relative wow fadeInDown animated"
+                            style="visibility: visible; animation-name:
+                            fadeInDown;">
+                            <img class="w-full" src="blog_img01.png">
+                            <i class="fa fa-calendar text-white text-center
+                                align-center absolute inset-x-0 bottom-30
+                                left-[50%] bg-[#fe8366] text-white text-xs
+                                border-none rounded-[25px] ">
+                                7 March, 2019
+                            </i>
+                            <h4 class=" mt-[40px] text-[20px] text-[#010f2e]
+                                hover:text-[#fe8366] text-center"><b>How do I
+                                    Sell
+                                    Affiliate
+                                    Products to My Customers</b></h4>
+                            <!--                    <i class="fa fa-arrow-circle-right inline"></i>-->
+                            <p class="text-[#fe8366] underline text-center">Read
+                                More</p>
+
+                        </div>
+
+                        <div class="relative wow fadeInUp animated"
+                            style="visibility: visible; animation-name:
+                            fadeInUp;">
+                            <img class="w-full" src="blog_img02.png">
+                            <i class="fa fa-calendar text-white text-center
+                                absolute align-center absolute inset-x-0
+                                bottom-30 left-[50%] bg-[#fe8366] text-white
+                                text-xs border-none rounded-[25px] text-2xl">
+                                7 March, 2019
+                            </i>
+                            <h4 class=" mt-[40px] text-[20px] text-[#010f2e]
+                                hover:text-[#fe8366] text-center"><b>How do I
+                                    Sell
+                                    Affiliate
+                                    Products to My Customers</b></h4>
+                            <p class="text-[#fe8366] underline text-center">Read
+                                More</p>
+                            <!--                    <a href="#" class="text-[#fe8366] underline">Read More</a>-->
+                        </div>
+
+                        <div class="relative fadeInDown animated"
+                            style="visibility: visible; animation-name:
+                            fadeInDown;">
+                            <img class="w-full" src="blog_img03.png">
+                            <i class="fa fa-calendar text-white text-center
+                                absolute align-center absolute inset-x-0
+                                bottom-30 left-[50%] bg-[#fe8366] text-white
+                                text-xs border-none rounded-[25px] text-2xl">
+                                7 March, 2019
+                            </i>
+                            <h4 class=" mt-[40px] text-[20px] text-[#010f2e]
+                                hover:text-[#fe8366] text-center"><b>How do I
+                                    Sell
+                                    Affiliate
+                                    Products to My Customers</b></h4>
+                            <p class="text-[#fe8366] underline text-center">Read
+                                More</p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--<! footer contine start- -->
+
+            <div class="pb-90 mt-[5%] fix bg-[url('footer-bg.png')] w-full
+                h-full bg-center pb-10">
+                <div class="container max-w-7xl md:mx-auto px-5 pt-20">
+                    <div class="grid grid-cols-1 rows-3 gap-4 md:grid-cols-4
+                        rows-3 gap-4">
+                        <div class="flex justify-center">
+                            <img src="f_logo.png">
+                        </div>
+                        <ul class="text-white col-start-1 col-span-2
+                            md:col-start-2 col-span-2 flex-none sm:flex
+                            justify-center">
+                            <li class="inline ml-5 hover:text-[#fe8366]">
+                                Home
+                            </li>
+                            <li class="inline ml-5 hover:text-[#fe8366]">
+                                About Us
+                            </li>
+                            <li class="inline ml-5 hover:text-[#fe8366]">
+                                Courses
+                            </li>
+                            <li class="inline ml-5 hover:text-[#fe8366]">
+                                Events
+                            </li>
+                            <li class="inline ml-5 hover:text-[#fe8366]">
+                                Blog
+                            </li>
+                            <li class="inline ml-5 hover:text-[#fe8366]">
+                                Contact Us
+                            </li>
+                        </ul>
+
+
+                        <ul class="flex justify-center">
+                            <li class="inline w-10 h-10 mr-2">
+                                <i class=" text-white align-center bg-[#345aa8]
+                                    hover:bg-[#fe8366] rounded-lg w-10 h-10 fa
+                                    fa-facebook text-center p-2 "></i>
+
+                            </li>
+                            <li class="inline w-10 h-10 mr-2">
+
+                                <i class=" text-white align-center bg-[#ff1d7d]
+                                    hover:bg-[#fe8366] rounded-lg w-10 h-10
+                                    text-center fa fa-instagram p-2 "></i>
+
+                            </li>
+                            <li class="inline w-10 h-10 ">
+                                <i class=" text-white align-center bg-[#55acef]
+                                    hover:bg-[#fe8366] rounded-lg w-10 h-10
+                                    text-center fa fa-twitter p-2 "></i>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <hr class="mt-9">
+                <div class="container max-w-7xl md:mx-auto px-10 pt-20">
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4
+                        sm:grid-cols-2">
+                        <div class="text-white ">
+                            <h2 class="text-2xl"><b>About Us</b></h2>
+                            <p class="text-[#c1c1c1] mt-5">Cras faucibus ornare
+                                ipsum, non luctus leo imperdiet sit amet.
+                                Praesent egestas orci eu risus
+                                iaculis luctus. Phasellus maximus orci metus.
+                                Nullam enim ex, facilisis at lacinia sed, luctus
+                                vitae dolor.</p>
+                        </div>
+                        <div>
+                            <h2 class="text-white text-2xl"><b>Contact Us</b></h2>
+                            <ul class="mt-5">
+                                <li class="flex items-center">
+                                    <i class=" text-white align-center
+                                        bg-[#fe8366] rounded-full w-10 h-10
+                                        text-center p-2 fa fa-map-marker
+                                        float-center "></i>
+                                    <span class="text-white text-[#c1c1c1]
+                                        ml-5">info@example.com
+                                        help@example.com
+                                    </span>
+                                </li>
+
+                                <li class="mb-5 flex items-center mt-5">
+                                    <i class=" text-white align-center
+                                        bg-[#fe8366] rounded-full w-10 h-10
+                                        text-center p-2 fa fa-phone
+                                        float-center"></i>
+                                    <span class="text-white text-[#c1c1c1]
+                                        ml-5"> 1800-121-3637
+                                        <br>+91-7052-101-786
+                                    </span>
+
+                                </li>
+
+                                <li class="flex items-center">
+                                    <i class=" text-white align-center
+                                        bg-[#fe8366] rounded-full w-10 h-10
+                                        text-center p-2 fa fa-envelope
+                                        float-center "></i>
+                                    <span class="text-white text-[#c1c1c1] ml-5
+                                        ">info@example.com
+                                        help@example.com
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-white text-2xl"><b>Our Services</b></h2>
+                            <ul class="text-white mt-5 text-[#c1c1c1]">
+                                <li class="mt-3">
+                                    Home
+                                </li>
+                                <li class="mt-3">
+                                    About Us
+                                </li>
+                                <li class="mt-3">
+                                    Services
+                                </li>
+                                <li class="mt-3">
+                                    Contact Us
+                                </li>
+                                <li class="mt-3">
+                                    Blog
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 class="text-white text-2xl"><b>Our Gallery</b></h2>
+                            <div class="grid grid-cols-2 rows-2 gap-4 mt-5">
+                                <img src="f-galler-01.png" class="mr-3
+                                    w-[100%]">
+                                <img src="f-galler-02.png" class="mr-3
+                                    w-[100%]">
+                                <img src="f-galler-03.png" class="mr-3
+                                    w-[100%]">
+                                <img src="f-galler-04.png" class="mr-3
+                                    w-[100%]">
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    <div class="copyright">-->
+
+
+            <div class="bg-[#515256] h-full">
+                <div class="container max-w-7xl md:mx-auto ">
+                    <div class="grid grid-cols-1 gap-4 pt-4 pb-4 sm:grid-cols-2
+                        gap-4 mx-5">
+                        <p class="text-white text-center">Copyright © 2021
+                            Luxia. All rights reserved.</p>
+                        <div>
+                            <ul class="text-center">
+
+                                <li class="text-white inline list-disc mr-3 ">
+                                    <i class=" text-white align-center
+                                        bg-[#fe8366] rounded-full w-10 h-10
+                                        text-center p-1 "></i>
+                                    <!--                            <i class="bg-[#fe8366] rounded-full w-[5px] h-[5px]"></i>-->
+                                    Privercy
+
+                                </li>
+                                <li class="text-white inline list-disc mr-3">
+                                    <i class=" text-white align-center
+                                        bg-[#fe8366] rounded-full w-10 h-10
+                                        text-center p-1 "></i>
+                                    <!--                            <i class=" text-white align-center bg-[#345aa8] rounded-full w-10 h-10  text-center p-1 "></i>-->
+                                    Term & Conditions
+                                </li>
+                                <li class="text-white inline list-disc mr-3">
+                                    <i class=" text-white align-center
+                                        bg-[#fe8366] rounded-full w-10 h-10
+                                        text-center p-1 "></i>
+                                    Legal
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--    </div>-->
+
+
+            <script>
+        const mobile_icon = document.getElementById('mobile-icon');
+        const mobile_menu = document.getElementById('mobile-menu');
+        const hamburger_icon = document.querySelector("#mobile-icon i");
+
+        function openCloseMenu() {
+            mobile_menu.classList.toggle('block');
+            mobile_menu.classList.toggle('active');
+        }
+
+        function changeIcon(icon) {
+            icon.classList.toggle("fa-xmark");
+        }
+
+        mobile_icon.addEventListener('click', openCloseMenu);
+
+
+    </script>
+        </body>
+    </html>
